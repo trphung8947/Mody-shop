@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa hàng Mô hình - Product Showcase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <ul class="nav-menu">
+                    <li><a href="#products" class="active" onclick="setActiveMenu(event)">Sản phẩm</a></li>
+                    <li><a href="#about" onclick="setActiveMenu(event)">Về Chúng Tôi</a></li>
+                    <li><a href="#promotion" onclick="setActiveMenu(event)">Ưu Đãi</a></li>
+                    <li><a href="#reviews" onclick="setActiveMenu(event)">Đánh Giá</a></li>
+                    <li><a href="#contact" onclick="setActiveMenu(event)">Liên Hệ</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-banner">
+                <img src="image/MODY.jpg" alt="Mody Banner" class="banner-img">
+            </div>
+            <div class="container">
+                <h2>Bộ sưu tập mô hình độc quyền</h2>
+                <p>Khám phá những sản phẩm mô hình chất lượng cao với giá cạnh tranh</p>
+            </div>
+        </section>
+
+        <section class="products-section" id="products">
+            <div class="container">
+                <div id="productGrid" class="product-grid">
+                    <!-- Sản phẩm sẽ được load từ JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Phần Về Chúng Tôi -->
+        <section class="about-section" id="about">
+            <div class="container">
+                <h2>Về Mody - Cửa hàng Mô hình 3D</h2>
+                <p>Chúng tôi là nhà cung cấp mô hình 3D game figures hàng đầu với chất lượng cao và giá cạnh tranh. Mỗi sản phẩm được chọn lọc kỹ càng để mang đến trải nghiệm tốt nhất cho khách hàng.</p>
+                <div class="about-features">
+                    <div class="feature">
+                        <span class="feature-icon">⭐</span>
+                        <h3>Chất lượng cao</h3>
+                        <p>Sản phẩm chính hãng, được kiểm định kỹ lưỡng</p>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">💰</span>
+                        <h3>Giá hợp lý</h3>
+                        <p>Giá cạnh tranh nhất thị trường</p>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">🚚</span>
+                        <h3>Giao hàng nhanh</h3>
+                        <p>Giao hàng toàn quốc trong 2-3 ngày</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Phần Khuyến Mãi -->
+        <section class="promotion-section" id="promotion">
+            <div class="container">
+                <h2>Ưu Đãi Đặc Biệt</h2>
+                <div class="promo-cards">
+                    <div class="promo-card">
+                        <h3>🎁 Tặng kèm</h3>
+                        <p>Mua 3 sản phẩm tặng 1 khăn lau</p>
+                    </div>
+                    <div class="promo-card">
+                        <h3>📦 Bộ sưu tập</h3>
+                        <p>Mua bộ 5 sản phẩm giảm 10%</p>
+                    </div>
+                    <div class="promo-card">
+                        <h3>💳 Thanh toán</h3>
+                        <p>Hỗ trợ nhiều hình thức thanh toán linh hoạt</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Phần Đánh Giá Khách Hàng -->
+        <section class="reviews-section" id="reviews">
+            <div class="container">
+                <h2>Nhận Xét Từ Khách Hàng</h2>
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p>"Chất lượng sản phẩm rất tốt, giao hàng nhanh và đóng gói kỹ lưỡng. Rất hài lòng!"</p>
+                        <h4>- Nguyễn Văn A</h4>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p>"Giá rất hợp lý so với những nơi khác. Hẹn sẽ quay lại mua thêm!"</p>
+                        <h4>- Trần Thị B</h4>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p>"Mô hình chi tiết tuyệt vời, đúng như hình ảnh. Cảm ơn Mody rất nhiều!"</p>
+                        <h4>- Lê Văn C</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Phần Liên Hệ -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <h2>Liên Hệ Chúng Tôi</h2>
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <h3>📍 Địa chỉ</h3>
+                        <p>123 Đường Nguyễn Huệ, TP. Hồ Chí Minh</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>📞 Điện thoại</h3>
+                        <p>(028) 1234 5678 - 0938 123 456</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>✉️ Email</h3>
+                        <p>info@modyshop.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>🕐 Giờ mở cửa</h3>
+                        <p>T2-CN: 09:00 - 21:00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal chi tiết sản phẩm -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-body">
+                <img id="modalImage" src="" alt="Sản phẩm">
+                <div class="modal-info">
+                    <h2 id="modalTitle"></h2>
+                    <p id="modalDescription"></p>
+                    <div class="modal-specs">
+                        <p><strong>Giá:</strong> <span id="modalPrice"></span></p>
+                        <p><strong>Kích thước:</strong> <span id="modalSize"></span></p>
+                        <p><strong>Số lượng:</strong> <span id="modalQuantity"></span></p>
+                    </div>
+                    <button class="btn-add-cart" onclick="addToCart()">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Model Shop - Cửa hàng mô hình chất lượng. Liên hệ: 0123456789</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
